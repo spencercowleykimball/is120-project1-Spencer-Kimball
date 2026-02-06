@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Project 1 - Login Page</title>
 
     <!-- Make sure to include this line otherwise the embedded font won't get picked up -->
     <link rel="stylesheet" href="style.css">
@@ -61,15 +61,27 @@
                 Login
             </h2>
 
-            <label for="username">User Name: </label> 
-            <input type="text">
+            <!-- Username text entry box -->
+            <div>
+                <label for="username">User Name: </label> 
+                <input class="login-text" type="text">
+                
+            </div>
+            
             <br>
-            <label for="password">Password:</label> 
-            <input type="text">
-            <form action=""></form>
+            
+            <!-- Password text entry box -->
+            <div>
+                <label for="password">Password:</label> 
+                <input class="login-text" type="text">
+                <form action=""></form>
+
+            </div>
 
             <br>
-            <button>Continue</button>
+            <a href="login-failed.html">
+                <button id="login-button" >Continue</button>
+            </a>
         </div>
 
     </div>
