@@ -91,21 +91,13 @@ button {
 
 /* Login Card Box */
 .card-login {
-    /* Width and margin here centered my div/card */
+  /* Width and margin here centered my div/card */
   width: 300px;
   margin: 0 auto;
   border-radius: 12px;
   background: rgb(89, 194, 194);
   color: white;
   padding: 20px;
-
-  /* position: center; */
-  /* margin: 50px; */
-  /* display: inline-block; */
-  /* vertical-align: top; */
-  /* text-align: relative; */
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 /* Regular Card Box */
@@ -132,6 +124,19 @@ button {
     color: white;
 
     border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#top-button {
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 600;
+
+    background-color: rgb(132, 188, 226);
+    color: white;
+
+    border: 3px solid white;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -182,4 +187,15 @@ img {
     width: 300px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Final Cart Menu List of items */
+.cart-card {
+  /* Width and margin here centered my div/card */
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 12px;
+  position: relative;
+  color: white;
+  padding: 20px;
 }
