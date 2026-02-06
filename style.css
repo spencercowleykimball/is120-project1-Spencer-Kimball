@@ -64,7 +64,7 @@ h3 {
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(224, 245, 250);
 }
 
 button {
@@ -82,8 +82,9 @@ button {
 .card-header {
     background-color: rgb(1, 93, 155);
     padding: 12px;
-    border-radius: 12px 12px 0 0 ;
+    border-radius: 12px 12px 12px 12px;
     font-size: 22px;
+    
 }
 
 
@@ -94,9 +95,9 @@ button {
   width: 300px;
   margin: 0 auto;
   border-radius: 12px;
-  background: hsl(39, 78%, 56%);
+  background: rgb(89, 194, 194);
   color: white;
-  padding: 10px;
+  padding: 20px;
 
   /* position: center; */
   /* margin: 50px; */
@@ -115,9 +116,26 @@ button {
   background: rgba(107, 4, 4, 0.863);
   color: white;
   position: relative;
-  margin: 50px;
+  margin: 100px;
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+}
+
+.card-button {
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 600;
+
+    background-color: rgb(53, 110, 148);
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+img {
+    border-radius: 12px 12px 12px 12px;
 }
