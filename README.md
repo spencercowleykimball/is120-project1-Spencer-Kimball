@@ -1,7 +1,6 @@
 # is120-project1-Spencer-Kimball
-Repo for Project 1
 
-Brief Description of my project:
+**Brief Description of my project:**
 
 My wife has a book binding hobby and she makes these as gifts for people for birthdays or baptisms.
 I think she does a really good job and makes it look great. I have also seen other people's websites
@@ -10,7 +9,7 @@ a website for her start up business to create custom bound books.
 
 
 
-Problems I ran into:
+**Problems I ran into:**
 
 I used the property that we learned in HW 5 to add a notification icon onto my shopping
 cart navigation button. As of right now it is a permanent 1 with a circle around it
