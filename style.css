@@ -15,11 +15,15 @@ white-image {
     color: white;
 }
 
+h1, h2, h3, .footer-text {
+    background-color: rgb(1, 155, 155);
+}
+
 
 h1 {
     /* Margin top removes the gap between the nav icons and the header */
     margin-top: 0;
-    background-color: rgb(1, 155, 155);
+    
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 50px;
@@ -27,7 +31,7 @@ h1 {
 }
 
 h2 {
-    background-color: rgb(1, 155, 155);
+    
     font-size: 30px;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -36,7 +40,7 @@ h2 {
 }
 
 h3 {
-    background-color: rgb(1, 155, 155);
+    
     font-size: 25px;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -46,7 +50,7 @@ h3 {
 }
 
 .footer-text {
-    background-color: rgb(1, 155, 155);
+    
     font-size: 15px;
     text-align: center;
     color: rgb(251, 251, 252);
@@ -232,6 +236,7 @@ a {
 /* Add an active style to the Purchase button at the end of the html website chain */
 /* These are the button features that aren't configured properly */
 /* Don't have a way to add something to a cart, or purchase, etc. */
+/* This is the styling for when the login buttons are being clicked */
 #login-button:active {
     color: red;
     background-color: white;
