@@ -1,9 +1,58 @@
+body {
+    background-color: rgb(224, 245, 250);
+}
+
+/* Adding commas to have a more consistent header and footer and clean up space in the css file */
+h1, h2, h3, .footer-text {
+    background-color: rgb(1, 155, 155);
+    color: rgb(255, 255, 255);
+    /* Margin top removes the gap between the nav icons and the header */
+    margin-top: 0;
+    text-align: center;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    border-radius: 12px 12px 12px 12px;
+}
+
+
+/* Class Assignments */
+.header-image {
+    display: inline-block;
+}
+
+.footer-text {
+    font-size: 15px;
+}
+
 .nav-icons {
     background-color: rgb(1, 155, 155);
     text-align: right;
     position: relative;
 }
 
+/* Badge icon positioning for the cart icon */
 .badge-icon {
     position: absolute;
     top: 2px;
@@ -11,84 +60,29 @@
     overflow: visible;
 }
 
-white-image {
-    color: white;
-}
-
-h1, h2, h3, .footer-text {
-    background-color: rgb(1, 155, 155);
-}
-
-
-h1 {
-    /* Margin top removes the gap between the nav icons and the header */
-    margin-top: 0;
-    
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-    margin-bottom: 0;
-}
-
-h2 {
-    
-    font-size: 30px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    margin-top: 0;
-    padding: 10px;
-}
-
-h3 {
-    
-    font-size: 25px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    margin-top: 20;
-    margin-bottom: 0;
-    padding: 5px;
-}
-
-.footer-text {
-    
-    font-size: 15px;
-    text-align: center;
-    color: rgb(251, 251, 252);
-    margin-top: 0;
-    padding: 5px;
-}
-
-.header-image {
-    display: inline-block;
-}
+/* ID Tags */
 
 /* Flipping the image across the Y-axis */
 #image-reverse {
     transform: scaleX(-1);
 }
 
-body {
-    background-color: rgb(224, 245, 250);
-}
 
-button {
-    cursor: pointer;
-}
+
+
+
 
 /* Login CSS */
 .login-menu {
     text-align: center;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
+/* The card header with padding and curved edges */
 .card-header {
     background-color: rgb(1, 93, 155);
     padding: 12px;
     border-radius: 12px 12px 12px 12px;
     font-size: 22px;
-    
 }
 
 
@@ -119,6 +113,7 @@ button {
   padding: 20px;
 }
 
+/* Button Class for a card button */
 .card-button {
     padding: 10px 18px;
     font-size: 16px;
@@ -133,7 +128,7 @@ button {
     transition: .3s;
 }
 
-
+/* Specific id tag for the one and only top button */
 #top-button {
     padding: 10px 18px;
     font-size: 16px;
@@ -147,12 +142,18 @@ button {
     cursor: pointer;
 }
 
-img {
-    border-radius: 12px 12px 12px 12px;
-}
+
 
 
 /* Login Page CSS Options */
+/* When someone tries to login, currently they can only FAIL logging in */
+.failed {
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Regular text color for the login page */
 .login-text {
     padding: 10px 18px;
     font-size: 16px;
@@ -191,12 +192,18 @@ img {
     border-radius: 8px;
 }
 
-.failed {
+/* Add an active style to the Purchase button at the end of the html website chain */
+/* These are the button features that aren't configured properly */
+/* Don't have a way to add something to a cart, or purchase, etc. */
+/* This is the styling for when the login buttons are being clicked */
+#login-button:active {
     color: red;
-    font-size: 20px;
-    font-weight: 700;
+    background-color: white;
 }
 
+
+
+/* Final Cart Menu List of items */
 .cart-items {
     display: inline-block;
     vertical-align: top;
@@ -205,7 +212,6 @@ img {
     padding: 20px;
 }
 
-/* Final Cart Menu List of items */
 .cart-card {
   /* Width and margin here centered my div/card */
   width: 300px;
@@ -233,11 +239,3 @@ a {
   margin-right: 8px;
 }
 
-/* Add an active style to the Purchase button at the end of the html website chain */
-/* These are the button features that aren't configured properly */
-/* Don't have a way to add something to a cart, or purchase, etc. */
-/* This is the styling for when the login buttons are being clicked */
-#login-button:active {
-    color: red;
-    background-color: white;
-}
