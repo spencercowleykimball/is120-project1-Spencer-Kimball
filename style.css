@@ -123,10 +123,12 @@ button {
     background-color: rgb(53, 110, 148);
     color: white;
 
-    border: none;
+    border: 2px solid rgb(5, 73, 117);
     border-radius: 8px;
     cursor: pointer;
+    transition: .3s;
 }
+
 
 #top-button {
     padding: 10px 18px;
@@ -136,7 +138,7 @@ button {
     background-color: rgb(132, 188, 226);
     color: white;
 
-    border: 3px solid white;
+    border: 2px solid white;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -173,6 +175,16 @@ img {
     border: 2px solid black;
     border-radius: 8px;
     cursor: pointer;
+    transition: .3s;
+
+}
+
+/* Adding the button hover component */
+#login-button:hover, #top-button:hover, .card-button:hover {
+    background-color: rgb(71, 151, 204);
+    border: 1px solid white;
+    border-width: 2px;
+    border-radius: 8px;
 }
 
 .failed {
@@ -204,4 +216,23 @@ img {
 a {
     text-decoration: none;
     color: white;
+}
+
+/* Add an id for the link to Stevie's video since it is on a lighter background */
+#stevie-video {
+    color: blue;
+}
+
+/* Adding the before element to add the book emoji before the link to watch Stevie's process video */
+#stevie-video::before {
+  content: "📘";
+  margin-right: 8px;
+}
+
+/* Add an active style to the Purchase button at the end of the html website chain */
+/* These are the button features that aren't configured properly */
+/* Don't have a way to add something to a cart, or purchase, etc. */
+#login-button:active {
+    color: red;
+    background-color: white;
 }
