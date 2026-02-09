@@ -9,7 +9,7 @@ h1, h2, h3, .footer-text {
     /* Margin top removes the gap between the nav icons and the header */
     margin-top: 0;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 h1 {
@@ -19,13 +19,13 @@ h1 {
 
 h2 {
     font-size: 30px;
-    margin-top: 0;
-    margin-bottom: 20;
+    margin-bottom: 5;
 }
 
 h3 {
     font-size: 25px;
     margin-bottom: 0;
+    margin-top: 100px;
 }
 
 button {
@@ -169,7 +169,7 @@ img {
 }
 
 /* Adding a border to the button */
-#login-button {
+#login-button, #purchase-button {
     padding: 10px 18px;
     font-size: 16px;
     font-weight: 300;
@@ -185,7 +185,7 @@ img {
 }
 
 /* Adding the button hover component */
-#login-button:hover, #top-button:hover, .card-button:hover {
+#login-button:hover, #top-button:hover, .card-button:hover, #purchase-button:hover {
     background-color: rgb(71, 151, 204);
     border: 1px solid white;
     border-width: 2px;
@@ -196,7 +196,7 @@ img {
 /* These are the button features that aren't configured properly */
 /* Don't have a way to add something to a cart, or purchase, etc. */
 /* This is the styling for when the login buttons are being clicked */
-#login-button:active {
+#login-button:active, #purchase-button:active {
     color: red;
     background-color: white;
 }
