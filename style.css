@@ -36,6 +36,12 @@ img {
     border-radius: 12px 12px 12px 12px;
 }
 
+p {
+    color: rgb(122, 84, 14);
+    font-size: 20px;
+    font-weight: 600;
+}
+
 
 /* Class Assignments */
 .header-image {
@@ -229,12 +235,12 @@ a {
 }
 
 /* Add an id for the link to Stevie's video since it is on a lighter background */
-#stevie-video {
+#stevie-process {
     color: blue;
 }
 
 /* Adding the before element to add the book emoji before the link to watch Stevie's process video */
-#stevie-video::before {
+#stevie-process::before {
   content: "📘";
   margin-right: 8px;
 }
