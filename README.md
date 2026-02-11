@@ -27,9 +27,9 @@ that will include javascript or something like that. Basically anywhere on the p
 that I want to get input from what the user is doing on the page can't be done using
 just html and css.
 
-This website I was hoping to be more mobile friendly with the skinnier group of cards, that they
-would be stacked on top of each other instead of in-line at least for the main page.
-I think my product pages may still not be very mobile friendly since those are made in-line
+The design and layout of this website I was hoping to be more mobile friendly with the skinnier group of cards. 
+I did this by stacking them on top of each other instead of in-line at least for the main page.
+I think my product pages still may not be very mobile friendly since those are made in-line
 with each other.
 
 I have been struggling to find where I would use id tags where it would need to be a unique tag
