@@ -1,5 +1,53 @@
 # is120-project1-Spencer-Kimball
 
+** HW 7 - CSS Responsive Design Readme **
+
+I am choosing project 1's index.html to make responsive. And it was made with the mobile version first approach for project 1, so now I am going to make it responsive for a desktop version. The original_index.html is the file unaltered for easy reference to see how the web pages differ. The original was stacked cards that didn't change their position based on the widening of the screen. Now I am hoping to change this html to make the cards go into a row position after some breakpoint. 
+
+Attempting to add a body container class for the responsive aspect for my 3 main cards.
+
+**What changes you made (media queries, any other restructuring to the existing code)**
+
+Added the book favicon which looks good while you are on the page, but if you go to a different tab it has a weird square border around it even though I have already removed the background from the image.
+
+I tried adding the "grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); " line of code for my body container class and it made it look AWFUL for the desktop version. On the original I have this cute little button called "top" at the bottom of the page, and including the repeat auto fit made the top button as big as the regular cards, and it changed to so many different widths as the screen size widened.
+
+Top button is irrelevent once the cards are aligned as a row for the desktop view. The top button didn't need to be in the container for the cards, so taking that out of the container fixed the issues with the top button.
+
+The option 2 card is going off the view width so then you have to side scroll for some reason. And they aren't evenly spaced in the center. The first card is smushed up against the left side of the screen. And there are huge gaps between each of the cards inside of the container.
+
+Having width: 100vw; and grid-template-columns: repeat(auto-fit); helped get it back to be mobile version friendly, but no longer putting them next to each other in a row.
+
+**Justify why you picked the custom breakpoints that you did. Look up Tailwind and Bootstrap standard breakpoints, are yours similar at all?**
+**If you had to build this page differently at the start to make it more responsive, what would you have done?**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+** Project 1 Readme **
+
 **Brief Description of my project:**
 
 My wife has a book binding hobby and she makes these as gifts for people for birthdays or baptisms.
