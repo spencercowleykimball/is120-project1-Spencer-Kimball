@@ -18,6 +18,13 @@ The option 2 card is going off the view width so then you have to side scroll fo
 
 Having width: 100vw; and grid-template-columns: repeat(auto-fit); helped get it back to be mobile version friendly, but no longer putting them next to each other in a row.
 
+Having margin: 32px auto; in the code helped to make the first card not cling to the left side so close.
+
+However, at this point, as the screen shrinks it does this weird thing where the first row has two of the cards both clinging to both sides of the screen (not centered at all) and the third one floating in the middle of the two cards on the second row.
+
+
+    
+
 **Justify why you picked the custom breakpoints that you did. Look up Tailwind and Bootstrap standard breakpoints, are yours similar at all?**
 **If you had to build this page differently at the start to make it more responsive, what would you have done?**
 
