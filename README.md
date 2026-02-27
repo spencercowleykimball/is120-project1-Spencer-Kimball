@@ -22,11 +22,26 @@ Having margin: 32px auto; in the code helped to make the first card not cling to
 
 However, at this point, as the screen shrinks it does this weird thing where the first row has two of the cards both clinging to both sides of the screen (not centered at all) and the third one floating in the middle of the two cards on the second row.
 
-
+Realized at this point that I should have my media queries at the bottom of the css (cascade) file. Not sure why I put them at the top of the code. So everything broke again, and dealing with problems that I had at the beginning of this assignment.
     
+After a lot of testing I finally got the flow down! My div's aren't centering perfectly the way that I want them to, but I finally understand how the cascading works at least with the media queries and when the base css code takes over (when there are no media queries that are evaluated as true). Since I used min-width I had to think of it as it grew from the phone to desktop view. That the base css code was in effect on the small screen, but as the screen width grew to be greater than the smallest min-width of a media query, then that one took effect. 
+
+I thought it was interesting that I barely had to touch the original html code at all. However, I did wind up taking out some redundant div tags since they were wrapping other divs that didn't actually have any classes being used on them.
+
 
 **Justify why you picked the custom breakpoints that you did. Look up Tailwind and Bootstrap standard breakpoints, are yours similar at all?**
+
+I set the media query breakpoints to be 900px, 1200px, and 1500px. These were the ones that worked based on the sizing of the heading as well as the card and card-image widths. That when it went from an iphone screen size to be over 900px I needed to change the image size to feel like it fit better.
+
+I just don't like that when it is less than 900 px, but greater than the iphone size, the cards don't center very well and so it looks slightly off.
+
+My breakpoints were fairly similar to the breakpoints that I found on getbootstrap.com (576, 768, 992, 1200, 1400). I didn't have as many breakpoints, but I wound up choosing my breakpoints before I even found this website and one of them happened to be the same. And the other two were just 100 pixels off which I thought was interesting.
+
+
 **If you had to build this page differently at the start to make it more responsive, what would you have done?**
+
+It is crazy that even though I built this page at the very beginning to only be for a smart phone screen, that trying to make it adjust to be a desktop screen size it was a confusing process. Trying to learn how the cascading worked with the base css code and the new media queries as the screen size was changing. 
+Knowing that there are specific breakpoints that should be implemented I could start out with the smallest version of the images and slowly increase them at each breakpoint. It does seem quite tedious that it needs to be for several breakpoints, so then I find myself changing the text size for p, h1, h2, h3 at each breakpoint which seems like too many lines of code.
 
 
 
