@@ -24,16 +24,16 @@ However, at this point, as the screen shrinks it does this weird thing where the
 
 Realized at this point that I should have my media queries at the bottom of the css (cascade) file. Not sure why I put them at the top of the code. So everything broke again, and dealing with problems that I had at the beginning of this assignment.
     
-After a lot of testing I finally got the flow down! My div's aren't centering perfectly the way that I want them to, but I finally understand how the cascading works at least with the media queries and when the base css code takes over (when there are no media queries that are evaluated as true). Since I used min-width I had to think of it as it grew from the phone to desktop view. That the base css code was in effect on the small screen, but as the screen width grew to be greater than the smallest min-width of a media query, then that one took effect. 
+After a lot of testing I finally got the flow down! I finally understand how the cascading works at least with the media queries and when the base css code takes over (when there are no media queries that are evaluated as true). Since I used min-width I had to think of it as it grew from the phone to desktop view. That the base css code was in effect on the small screen, but as the screen width grew to be greater than the smallest min-width of a media query, then that one took effect. 
 
 I thought it was interesting that I barely had to touch the original html code at all. However, I did wind up taking out some redundant div tags since they were wrapping other divs that didn't actually have any classes being used on them.
+
+My divs weren't centering again...and I realized that I had set margin twice within the same card css code. Margin: 0 auto and then a few lines down I also set Margin: 20px. That took way too long to fix.
 
 
 **Justify why you picked the custom breakpoints that you did. Look up Tailwind and Bootstrap standard breakpoints, are yours similar at all?**
 
 I set the media query breakpoints to be 900px, 1200px, and 1500px. These were the ones that worked based on the sizing of the heading as well as the card and card-image widths. That when it went from an iphone screen size to be over 900px I needed to change the image size to feel like it fit better.
-
-I just don't like that when it is less than 900 px, but greater than the iphone size, the cards don't center very well and so it looks slightly off.
 
 My breakpoints were fairly similar to the breakpoints that I found on getbootstrap.com (576, 768, 992, 1200, 1400). I didn't have as many breakpoints, but I wound up choosing my breakpoints before I even found this website and one of them happened to be the same. And the other two were just 100 pixels off which I thought was interesting.
 
